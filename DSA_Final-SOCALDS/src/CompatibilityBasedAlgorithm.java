@@ -1,3 +1,6 @@
+import sun.awt.image.ImageWatched;
+
+import javax.naming.InsufficientResourcesException;
 import java.util.*;
 
 /**
@@ -15,19 +18,62 @@ class CompatibilityBasedAlgorithm extends CompatibilityAlgorithm {
      * @returns list of the top candidates
      */
     public List<Person> getTopCandidates(Person user, List<Person> candidates) {
-        Map<Person, Integer>compatibilityScores = new HashMap();
+        /**
+        Map<Person, Integer> compatibilityScores = new LinkedHashMap<>();
+        ArrayList<Integer> scores = new ArrayList<>();
 
-        for (Person candidate: candidates) {
+        for (Person candidate :  candidates) {
             int score = calculateCompatibility(user, candidate);
             compatibilityScores.put(candidate, score);
         }
 
-        List<Person> sortedCandidates = new ArrayList(candidates);
-        //Collections.sort(sortedCandidates);
+
+        List<Map.Entry<Person, Integer>> entries = new ArrayList<Map.Entry<Person, Integer>>(map.entrySet());
+        Collections.sort(entries, new Comparator<Map.Entry<Person, Integer>>() {
+            public int compare(Map.Entry<String, Integer> a, Map.Entry<String, Integer> b){
+                return a.getValue().compareTo(b.getValue());
+            }
+        });
+        Map<String, Integer> sortedMap = new LinkedHashMap<String, Integer>();
+        for (Map.Entry<Person, Integer> entry : entries) {
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
 
 
-        return sortedCandidates.subList(0, Math.min(10, sortedCandidates.size()));
+
+        for(int i = 0; i < 10; i++){
+            return entryList.get(i);
+        }
+
+
+
+        Collections.sort(scores);
+
+
+
+        **/
+        //
+        List<Person> ret = new ArrayList<Person>();
+        ArrayList<Integer> scores = new ArrayList<Integer>();
+        for (Person candidate :  candidates) {
+            int score = calculateCompatibility(user, candidate);
+            //compatibilityScores.put(candidate, score);
+            scores.add(candidate.getCompatibilityScore());
+        }
+        scores.sort(Comparator.naturalOrder());
+
+        for(int i : scores){
+            for(Person e : candidates){
+                if(e.getCompatibilityScore() == i && !ret.contains(e)){
+                    ret.add(e);
+                }
+            }
+        }
+        return ret;
     }
+
+
+
 
     /**
      * Method used to calculate the user's probability with another candidate/user
@@ -39,7 +85,7 @@ class CompatibilityBasedAlgorithm extends CompatibilityAlgorithm {
     private int calculateCompatibility(Person user, Person candidate) {
         int score = 0;
 
-        if (user.getGender().equalsIgnoreCase(candidate.getGender())) score += 10;
+        if (user.getGender().equalsIgnoreCase(candidate.getGender())) score -= 10;
         if (user.getFavoriteFood().equalsIgnoreCase(candidate.getFavoriteFood())) score += 15;
         if (user.getEthnicity().equalsIgnoreCase(candidate.getEthnicity())) score += 5;
         if (Math.abs(user.getAge() - candidate.getAge()) == 5) score += 20;

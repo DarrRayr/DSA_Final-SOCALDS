@@ -10,6 +10,7 @@ public class Person extends Attributes{
     private String name;
     private String description;
     private ArrayList<String> socials;
+    private int compatibilityScore;
 
     /**
      * Constructor for Person object, sets up base profile for the user
@@ -118,6 +119,22 @@ public class Person extends Attributes{
             socials.add(input);
         }
         editProfile();
+    }
+
+    /**
+     * Sets the compatible score of the user
+     * @param score score to be set to
+     */
+    public void setCompatScore(int score){
+        compatibilityScore = score;
+    }
+
+    /**
+     * Return the compatibility score
+     * @return user's compatibility score
+     */
+    public int getCompatibilityScore(){
+        return compatibilityScore;
     }
 
     /**
