@@ -1,15 +1,19 @@
 import java.lang.reflect.Array;
 import java.util.*;
 
+/**
+ * Class that represents a candidate/user within SOCALDS, includes attributes and other descriptors
+ * @author Darryl Rayray
+ */
 public class Person extends Attributes{
     //basic information
     private String name;
     private String description;
     private ArrayList<String> socials;
-    private int compatibility;
 
     /**
-     *
+     * Constructor for Person object, sets up base profile for the user
+     * @author Darryl Rayray
      */
     public Person(){
         socials = new ArrayList<String>();
@@ -17,6 +21,47 @@ public class Person extends Attributes{
         editProfile();
     }
 
+    /**
+     * Constructor for reading in files, more automated way of initialization
+     * @author Darryl Rayray
+     * @param name name of user
+     * @param description description of the user
+     * @param socials social handles of the user
+     * @param sex user's sex
+     * @param gender user's gender
+     * @param hairColor user's hair color
+     * @param eyeColor user's eyeColor
+     * @param ethnicity user's ethnicity
+     * @param race user's race
+     * @param age user's age
+     * @param height user's height
+     * @param seriousRelationship is user looking for a serious relationship
+     * @param favoriteFood user's favorite food
+     * @param currentStudent is user a current student
+     * @param occupation user's occupation
+     */
+    public Person(String name, String description, ArrayList<String> socials, int sex, String gender, String hairColor, String eyeColor, String ethnicity, String race, int age, String height, boolean seriousRelationship, String favoriteFood, boolean currentStudent, String occupation){
+        this.name = name;
+        this.description = description;
+        this.socials = socials;
+        super.sex = sex;
+        super.gender = gender;
+        super.hairColor = hairColor;
+        super.eyeColor = eyeColor;
+        super.ethnicity = ethnicity;
+        super.race = race;
+        super.age = age;
+        super.height = height;
+        super.seriousRelationship = seriousRelationship;
+        super.favoriteFood = favoriteFood;
+        super.currentStudent = currentStudent;
+        super.occupation = occupation;
+    }
+
+    /**
+     * Displays UI for editing user's profile
+     * @author Darryl Rayray
+     */
     public void editProfile(){
         System.out.print("\nEdit: " +
                 "\n > Name (1) " +
@@ -34,6 +79,10 @@ public class Person extends Attributes{
         else{System.out.println("\nGoing back to homepage...\n");}
     }
 
+    /**
+     * sets name using user input
+     * @author Darryl Rayray
+     */
     public void setName(){
         System.out.print("Enter in desired First + Last name:" +
                 "\n > ");
@@ -42,6 +91,10 @@ public class Person extends Attributes{
         editProfile();
     }
 
+    /**
+     * sets user description using user input
+     * @author Darryl Rayray
+     */
     public void setDescription(){
         System.out.print("Enter in a description about yourself:" +
                 "\n > ");
@@ -50,6 +103,10 @@ public class Person extends Attributes{
         editProfile();
     }
 
+    /**
+     * set user socials using user input
+     * @author Darryl Rayray
+     */
     public void setSocials(){
         socials.clear();
         System.out.print("Enter in 3 of your socials:\n");
@@ -63,14 +120,26 @@ public class Person extends Attributes{
         editProfile();
     }
 
+    /**
+     * getter method for name
+     * @return user's name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * getter method for description
+     * @return user's description
+     */
     public String getDescription() {
         return description;
     }
 
+    /**
+     * getter method for socials
+     * @return user's socials
+     */
     public String getSocials() {
         String ret = "";
         for(String i : socials){
@@ -79,15 +148,24 @@ public class Person extends Attributes{
         return ret;
     }
 
+    /**
+     * getter method for displaying user's attributes
+     * @return user's attributes
+     */
     public String getAttributes(){
         return super.toString();
     }
 
+    /**
+     * to string method that returns the user's details/profile
+     * @return the user's details
+     */
+    @Override
     public String toString(){
         String ret = "";
-        ret += "\n" + getName() + "'s Profile:\n";
+        ret += "\n" + name + "'s Profile:\n";
         ret += "Description: " + getDescription() + "\n";
-        ret += "Socials" + getSocials() + "\n";
+        ret += "Socials:\n" + getSocials() + "\n";
         ret += getAttributes();
         return ret;
     }

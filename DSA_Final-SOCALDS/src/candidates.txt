@@ -1,0 +1,241 @@
+40
+Emily
+Beach lover, yoga teacher, and avocado toast enthusiast. Catch me in the mornings by the ocean or at a local farmers' market on weekends!
+@emilyyoga, @beachy_em, @avocadotoastqueen
+1
+Woman
+Blonde
+Blue
+Caucasian
+White
+23
+5'6"
+1
+Avocado toast
+1
+Yoga Instructor
+Jake
+Surfing, tech, and tacos are my life. I’m always looking for the next beach to catch a wave or a new gadget to play with.
+@jake_the_wave, @tech_surfer, @socaladventures
+0
+Man
+Brown
+Green
+Hispanic
+Latino
+25
+5'10"
+0
+Tacos
+0
+Software Developer
+Sophie
+A beach-loving girl who's passionate about sustainability and cooking healthy meals. I’m all about good vibes and morning coffee.
+@sophie_sees, @green_girl_sophie, @veganvibes
+1
+Woman
+Dark Brown
+Brown
+African American
+Black
+22
+5'5"
+1
+Vegan sushi
+1
+Environmental Studies Major
+Ryan
+Gym, hikes, and beach workouts are my go-to. Always looking for a new challenge or adventure, and I never turn down a good smoothie.
+@ryan_fitlife, @hiking_bro, @smoothieking
+0
+Man
+Black
+Brown
+Middle Eastern
+Arab
+24
+6'1"
+1
+Smoothie bowls
+0
+Personal Trainer
+Zoe
+I’m all about spontaneous adventures and trying new foods. Coffee runs, weekend hikes, and creative dates are my jam.
+@zoe_creative, @coffeetimewithzoe, @weekendhiker
+1
+Woman
+Red
+Hazel
+Irish
+White
+26
+5'7"
+1
+Ramen
+0
+Graphic Designer
+Max
+Always up for trying new things. Whether it's a rock climbing trip or a night out in LA, I live for the excitement.
+@max_adventure, @explorewithmax, @urban_climber
+0
+Man
+Blond
+Blue
+German
+White
+27
+6'0"
+0
+Burgers
+0
+Marketing Specialist
+Chloe
+Fashionista, beach lover, and brunch enthusiast. I live for sunny days and cute outfits. Let’s explore the latest coffee shops in LA together!
+@chloe_fashion, @brunchlover, @coffeewithchloe
+1
+Woman
+Blonde
+Brown
+Caucasian
+White
+23
+5'4"
+1
+Acai bowls
+1
+Fashion Marketing Major
+Ethan
+Whether it’s a concert or a hiking trail, I’m always up for an adventure. Let’s catch a sunset at Griffith Park soon!
+@ethanrocks, @adventureethan, @city_explorer
+0
+Man
+Brown
+Green
+Jewish
+Race: White
+25
+5'11"
+0
+Pizza
+1
+Film Student
+Lily
+LA girl, always ready for a rooftop bar or a night of karaoke. Looking for someone to explore the city’s hidden gems with.
+@lilys_universe, @rooftopvibes, @karaokequeen
+1
+Woman
+Black
+Brown
+Filipino
+Asian
+22
+5'2"
+1
+Sushi
+1
+Communications Major
+Jackson
+Skateboarding through life with a camera in hand. Let’s find the next cool place to take photos or catch a local band.
+@jackson_thephotog, @skate_and_snap, @musicinmotion
+0
+Man
+Dark Brown
+Brown
+Caucasian
+White
+24
+5'9"
+0
+Street tacos
+0
+Photographer
+Ava
+Dog mom, beach lover, and coffee addict. Let’s grab a latte and head to the dog park for a walk.
+@avadogmom, @beachbabeava, @coffeewithava
+1
+Woman
+Brown
+Green
+Latina
+Latino
+24
+5'5"
+1
+Mexican food
+1
+Psychology Major
+Chris
+Life’s too short not to travel. I’m always planning my next adventure, whether it's hiking in Big Bear or flying to a new country.
+@chrisadventures, @travelwithchris, @nature_bro
+0
+Man
+Blonde
+Blue
+Scandinavian
+White
+26
+6'2"
+1
+Steak
+0
+Travel Blogger
+Jasmine
+Exploring the world one step at a time. I love going on hikes, finding new places to eat, and soaking up the sunshine.
+@jasmine_explores, @socaljasmine, @sunshineandhikes
+1
+Woman
+Black
+Brown
+Black
+Black
+22
+5'3"
+1
+Vegan cuisine
+1
+Health & Wellness Major
+Noah
+Music lover, beach goer, and always up for a spontaneous adventure. I’m the kind of guy who loves concerts, sunsets, and good company.
+@noah_beats, @beachside_nz, @live_love_laugh
+0
+Man
+Dark Brown
+Brown
+Pacific Islander
+Pacific Islander
+27
+5'11"
+0
+BBQ
+0
+Music Producer
+Mia
+Obsessed with sunsets, good music, and all things artistic. I’m a creative soul who loves getting lost in new places and meeting new people.
+@mia_artist, @sundaze_mia, @musicandartlife
+1
+Woman
+Auburn
+Hazel
+Italian
+White
+23
+5'5"
+1
+Pasta
+1
+Art Major
+Valerie
+I’m a sucker for good coffee, great books, and lazy Sunday mornings. If you love to travel, hike, or just enjoy good company, we’ll get along great.
+@valeriebooks @coffeelover @adventurevalerie
+1
+Woman
+Blonde
+Blue
+Swedish
+White
+22
+5'6"
+1
+Croissants
+1
+English Major

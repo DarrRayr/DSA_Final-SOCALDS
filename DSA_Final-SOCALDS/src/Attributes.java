@@ -1,39 +1,30 @@
 import java.util.Scanner;
 
+/**
+ * Attributes class for the person class
+ * @author Darryl Rayray
+ */
 public class Attributes {
 
     //12 attributes
-    private int sex;
-    private String gender;
-    private String hairColor;
-    private String eyeColor;
-    private String ethnicity;
-    private String race;
-    private int age;
-    private String height;
-    private boolean seriousRelationship;
-    private String favoriteFood;
-    private boolean currentStudent;
-    private String occupation;
+    int sex;
+    String gender;
+    String hairColor;
+    String eyeColor;
+    String ethnicity;
+    String race;
+    int age;
+    String height;
+    boolean seriousRelationship;
+    String favoriteFood;
+    boolean currentStudent;
+    String occupation;
 
-    public Attributes() {
-        /**
-       System.out.println("\nSet your other attributes!:\n");
-       setSex();
-       setGender();
-       setHairColor();
-       setEyeColor();
-       setEthnicity();
-       setRace();
-       setAge();
-       setHeight();
-       setSeriousRelationship();
-       setFavoriteFood();
-       setCurrentStudent();
-       setOccupation();
-         */
-    }
 
+    /**
+     * Method that displays the UI and allows the user to edit their displayed attributes
+     * @author Darryl Rayray
+     */
     public void editAttributes(){
         System.out.print("\nEdit: " +
                 "\n > Sex (1) " +
@@ -67,7 +58,10 @@ public class Attributes {
         else{System.out.println("\nGoing back to homepage...\n\n");}
     }
 
-
+    /**
+     * setter method for sex with user input
+     * @author Darryl Rayray
+     */
     public void setSex(){
         System.out.print("\nEnter in sex (0 = Male, 1 = Female, 3 = Unisex):" +
                 "\n > ");
@@ -76,6 +70,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for gender with user input
+     * @author Darryl Rayray
+     */
     public void setGender(){
         System.out.print("\nEnter in your gender:" +
                 "\n > ");
@@ -84,6 +82,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for hair color with user input
+     * @author Darryl Rayray
+     */
     public void setHairColor(){
         System.out.print("\nEnter in your hair color:" +
                 "\n > ");
@@ -92,6 +94,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for eye color with user input
+     * @author Darryl Rayray
+     */
     public void setEyeColor(){
         System.out.print("Enter in your eye color:" +
                 "\n > ");
@@ -100,6 +106,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for ethnicity with user input
+     * @author Darryl Rayray
+     */
     public void setEthnicity(){
         System.out.print("\nEnter in your ethnicity:" +
                 "\n > ");
@@ -108,6 +118,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for race with user input
+     * @author Darryl Rayray
+     */
     public void setRace(){
         System.out.print("\nEnter in your race:" +
                 "\n > ");
@@ -116,6 +130,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for age with user input
+     * @author Darryl Rayray
+     */
     public void setAge(){
         System.out.print("\nEnter in your age:" +
                 "\n > ");
@@ -128,6 +146,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for height with user input
+     * @author Darryl Rayray
+     */
     public void setHeight(){
         System.out.print("\nEnter in your height in feet:" +
                 "\n > ");
@@ -136,6 +158,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for serious relationship with user input
+     * @author Darryl Rayray
+     */
     public void setSeriousRelationship(){
         System.out.print("\nAre you looking for a serious relationship? (1 = Yes | 0 = No):" +
                 "\n > ");
@@ -144,6 +170,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for favorite food with user input
+     * @author Darryl Rayray
+     */
     public void setFavoriteFood(){
         System.out.print("\nEnter in your favorite food:" +
                 "\n > ");
@@ -152,6 +182,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for current student with user input
+     * @author Darryl Rayray
+     */
     public void setCurrentStudent(){
         System.out.print("\nAre you a current student? (1 = Yes | 0 = No):" +
                 "\n > ");
@@ -160,6 +194,10 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * setter method for occupation with user input
+     * @author Darryl Rayray
+     */
     public void setOccupation(){
         System.out.print("\nEnter in your current occupation (put \"N/A\" for no occupation):" +
                 "\n > ");
@@ -168,58 +206,110 @@ public class Attributes {
         editAttributes();
     }
 
+    /**
+     * getter method for sex
+     * @author Darryl Rayray
+     */
     public String getSex() {
         if (sex == 0){return "M";}
         else if (sex == 1){return "F";}
         else {return "U";}
     }
 
+    /**
+     * getter method for gender
+     * @author Darryl Rayray
+     */
     public String getGender() {
         return gender;
     }
 
+    /**
+     * getter method for hair color
+     * @author Darryl Rayray
+     */
     public String getHairColor() {
         return hairColor;
     }
 
+    /**
+     * getter method for eye color
+     * @author Darryl Rayray
+     */
     public String getEyeColor() {
         return eyeColor;
     }
 
+    /**
+     * getter method for ethnicity
+     * @author Darryl Rayray
+     */
     public String getEthnicity() {
         return ethnicity;
     }
 
+    /**
+     * getter method for race
+     * @author Darryl Rayray
+     */
     public String getRace() {
         return race;
     }
 
+    /**
+     * getter method for age
+     * @author Darryl Rayray
+     */
     public int getAge() {
         return age;
     }
 
+    /**
+     * getter method for height
+     * @author Darryl Rayray
+     */
     public String getHeight() {
         return height;
     }
 
+    /**
+     * getter method for serious relationship
+     * @author Darryl Rayray
+     */
     public String getSeriousRelationship() {
         if(seriousRelationship){return "Yes";}
         else{return "No";}
     }
 
+    /**
+     * getter method for favorite food
+     * @author Darryl Rayray
+     */
     public String getFavoriteFood() {
         return favoriteFood;
     }
 
+    /**
+     * getter method for current student
+     * @author Darryl Rayray
+     */
     public String getCurrentStudent() {
             if(currentStudent){return "Yes";}
             else{return "No";}
         }
 
+    /**
+     * getter method for occupation
+     * @author Darryl Rayray
+     */
     public String getOccupation() {
         return occupation;
     }
 
+    /**
+     * to string method for attributes
+     * @return user's attributes
+     */
     @Override
     public String toString() {
         String ret = "";
